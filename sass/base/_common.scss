@@ -1,0 +1,20 @@
+//body
+body {
+  font-family: 'Roboto', sans-serif;
+  color: var(--text-color);
+  // max-width: 1600px; margin: 0px auto;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+p {
+  margin: 0;
+}
+/* Убираем маркеры в списках */
+ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}

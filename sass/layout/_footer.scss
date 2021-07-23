@@ -1,0 +1,44 @@
+/* Делает слово Studio в логотипе footer белым */
+.logo-span-footer {
+  color: var(--primary-white-color);
+}
+/* Делает подсветку при наведении курсора или перехода цветом для nav и footer */
+.footer-list .footer-item:hover,
+.footer-list .footer-item:focus,
+.footer-list .footer-map:hover,
+.footer-list .footer-map:focus {
+  color: var(--accent-color);
+}
+/* Делает футер в стиле */
+.footer-list .footer-item {
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 24px;
+  text-decoration: none;
+  letter-spacing: 0.03em;
+  color: var(--footer-item-color);
+  /* margin-right: 10px; */
+  /* Добавляем анимацию */
+  transition: color 250ms var(--transition-timing-function);
+}
+/* Делает цвет текста ссылки на карту */
+.footer-map {
+  color: var(--primary-white-color);
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 24px;
+  text-decoration: none;
+  /* Добавляем анимацию */
+  transition: color 250ms var(--transition-timing-function);
+  white-space: nowrap; /* Запрещаем перенос текста */
+}
+/* Делаем цвет фона footer */
+.footer-background {
+  background-color: var(--hero-background-color);
+  padding-top: 60px;
+  padding-bottom: 60px;
+  max-width: 1600px;
+  margin: 0px auto;
+}
