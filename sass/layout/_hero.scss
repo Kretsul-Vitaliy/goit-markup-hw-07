@@ -12,3 +12,56 @@
     ),
     url(../images/header-background.jpg);
 }
+/* Изменяет курсор на кнопке заказать услугу в секции3 */
+.section-hero-button {
+  border: 1px solid transparent;
+  font-family: 'Roboto', sans-serif;
+  cursor: pointer;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 16px;
+  line-height: 30px;
+  /* identical to box height, or 187% */
+  letter-spacing: 0.06em;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+  border-radius: 4px;
+  min-width: 200px;
+  min-height: 50px;
+  /* Добавляем анимацию */
+  transition: box-shadow 250ms var(--transition-timing-function);
+}
+.section-hero-button.primary:hover,
+.section-hero-button.primary:focus {
+  /* При наведении курсора делает не прозрачным кнопку */
+  /* background-color: rgba(33, 150, 243, 1); */
+  background-color: var(--cursor-button-color);
+  /* opacity: 1; */
+  /* Добавляем анимацию */
+  animation-iteration-count: infinite;
+  display: inline-block;
+}
+
+.section-hero-button.primary {
+  color: var(--primary-white-color);
+  background-color: var(--accent-color);
+  /* background-color: rgba(33, 150, 243, 0.9); */
+  /* opacity: 0.9; */
+  /* Добавляем анимацию */
+  transition: background-color 250ms var(--transition-timing-function),
+    color 250ms var(--transition-timing-function),
+    opacity 250ms var(--transition-timing-function);
+}
+/* Изменяет шрифт Эффективные решения для вашего бизнеса */
+.section-3-text-color {
+  font-style: normal;
+  font-weight: 900;
+  font-size: 44px;
+  line-height: 60px;
+  text-align: center;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  color: var(--primary-white-color);
+  width: 696px;
+  margin: 0 auto;
+  margin-bottom: 30px;
+}

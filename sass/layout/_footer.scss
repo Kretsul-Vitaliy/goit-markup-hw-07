@@ -42,3 +42,11 @@
   max-width: 1600px;
   margin: 0px auto;
 }
+.footer-background .logo {
+  display: block;
+  margin-bottom: 20px;
+}
+
+.footer-item + .footer-item {
+  margin-top: 9px;
+}

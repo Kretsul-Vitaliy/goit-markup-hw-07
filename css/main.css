@@ -56,6 +56,10 @@ ul {
   padding: 0;
 }
 
+.nobull {
+  list-style-type: none;
+}
+
 .container {
   width: 1200px;
   padding: 0 15px;
@@ -212,6 +216,60 @@ ul {
   background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/header-background.jpg);
 }
 
+/* Изменяет курсор на кнопке заказать услугу в секции3 */
+.section-hero-button {
+  border: 1px solid transparent;
+  font-family: 'Roboto', sans-serif;
+  cursor: pointer;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 16px;
+  line-height: 30px;
+  /* identical to box height, or 187% */
+  letter-spacing: 0.06em;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+  border-radius: 4px;
+  min-width: 200px;
+  min-height: 50px;
+  /* Добавляем анимацию */
+  transition: box-shadow 250ms var(--transition-timing-function);
+}
+
+.section-hero-button.primary:hover,
+.section-hero-button.primary:focus {
+  /* При наведении курсора делает не прозрачным кнопку */
+  /* background-color: rgba(33, 150, 243, 1); */
+  background-color: var(--cursor-button-color);
+  /* opacity: 1; */
+  /* Добавляем анимацию */
+  animation-iteration-count: infinite;
+  display: inline-block;
+}
+
+.section-hero-button.primary {
+  color: var(--primary-white-color);
+  background-color: var(--accent-color);
+  /* background-color: rgba(33, 150, 243, 0.9); */
+  /* opacity: 0.9; */
+  /* Добавляем анимацию */
+  transition: background-color 250ms var(--transition-timing-function), color 250ms var(--transition-timing-function), opacity 250ms var(--transition-timing-function);
+}
+
+/* Изменяет шрифт Эффективные решения для вашего бизнеса */
+.section-3-text-color {
+  font-style: normal;
+  font-weight: 900;
+  font-size: 44px;
+  line-height: 60px;
+  text-align: center;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  color: var(--primary-white-color);
+  width: 696px;
+  margin: 0 auto;
+  margin-bottom: 30px;
+}
+
 /* Делает слово Studio в логотипе footer белым */
 .logo-span-footer {
   color: var(--primary-white-color);
@@ -260,5 +318,161 @@ ul {
   padding-bottom: 60px;
   max-width: 1600px;
   margin: 0px auto;
+}
+
+.footer-background .logo {
+  display: block;
+  margin-bottom: 20px;
+}
+
+.footer-item + .footer-item {
+  margin-top: 9px;
+}
+
+/* Изменяет текст секции 4 заголовков h3 */
+.section-4-h3 {
+  font-style: normal;
+  font-weight: bold;
+  font-size: 14px;
+  line-height: 16px;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+}
+
+.features-list {
+  display: flex;
+}
+
+.features {
+  padding-top: 94px;
+  padding-bottom: 94px;
+  max-width: 1600px;
+  margin: 0px auto;
+}
+
+.features-item + .features-item {
+  margin-left: 30px;
+}
+
+.features-item {
+  width: 270px;
+}
+
+.services {
+  padding-bottom: 94px;
+  max-width: 1600px;
+  margin: 0px auto;
+}
+
+.services-list {
+  display: flex;
+}
+
+.services-item + .services-item {
+  margin-left: 30px;
+}
+
+/* Наложение подписи в секции чем мы занимаемся поверх изображения */
+.services-thumb {
+  background: rgba(47, 48, 58, 0.8);
+  padding-top: 27px;
+  padding-bottom: 27px;
+  position: absolute;
+  bottom: 0px;
+  width: 100%;
+}
+
+.services-text {
+  font-style: normal;
+  font-weight: bold;
+  font-size: 14px;
+  line-height: 16px;
+  text-align: center;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  color: var(--primary-white-color);
+}
+
+.services-desktop {
+  position: relative;
+}
+
+/* Изменяет текст секции 4 */
+.section-4-text {
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 24px;
+  /* or 171% */
+  letter-spacing: 0.03em;
+  color: var(--portfolio-color-title);
+  margin-top: 10px;
+}
+
+/* Изменяет текст секции 5 заголовков h2 */
+/* Изменяет текст секции 6 заголовка h2 */
+.title {
+  font-style: normal;
+  font-weight: bold;
+  font-size: 36px;
+  line-height: 42px;
+  text-align: center;
+  letter-spacing: 0.03em;
+  margin-bottom: 50px;
+}
+
+/* Изменяет текст секции 6 заголовков h3 имя и фамилия команды */
+.team-name {
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 19px;
+  /* identical to box height */
+  text-align: center;
+  letter-spacing: 0.03em;
+  margin-bottom: 10px;
+}
+
+/* Изменяет текст секции 6 */
+.section-6-text {
+  font-style: normal;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 19px;
+  /* identical to box height */
+  text-align: center;
+  letter-spacing: 0.03em;
+  color: var(--portfolio-color-title);
+}
+
+/* Изменяет фон секции 6 */
+.team {
+  background-color: var(--portfolio-button-color);
+  padding-top: 94px;
+  padding-bottom: 94px;
+  max-width: 1600px;
+  margin: 0px auto;
+}
+
+.team-list {
+  display: flex;
+}
+
+.team-item {
+  background-color: var(--primary-white-color);
+  /* material shadow v1 */
+  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
+  border-radius: 0px 0px 4px 4px;
+}
+
+.team-item + .team-item {
+  margin-left: 30px;
+}
+
+.team-box {
+  padding-top: 30px;
+  padding-bottom: 30px;
+  padding-left: 32px;
+  padding-right: 32px;
 }
 /*# sourceMappingURL=main.css.map */
