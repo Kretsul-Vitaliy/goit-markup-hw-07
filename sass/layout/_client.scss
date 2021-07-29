@@ -1,0 +1,32 @@
+.client {
+  background-color: var(--primary-white-color);
+  padding-top: 94px;
+  padding-bottom: 94px;
+  max-width: 1600px;
+  margin: 0px auto;
+}
+.client-list {
+  display: flex;
+}
+.client-link {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 170px;
+  height: 92px;
+  border: 1px solid var(--social-icon-color);
+  border-radius: 4px;
+  fill: var(--social-icon-color);
+  /* Добавляем анимацию */
+  transition: fill 250ms var(--transition-timing-function),
+    border 250ms var(--transition-timing-function);
+}
+.client-item + .client-item {
+  margin-left: 30px;
+}
+
+.client-link:hover,
+.client-link:focus {
+  fill: var(--accent-color);
+  border: 1px solid var(--accent-color);
+}

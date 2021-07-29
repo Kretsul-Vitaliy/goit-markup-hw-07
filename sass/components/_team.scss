@@ -48,3 +48,35 @@
   padding-left: 32px;
   padding-right: 32px;
 }
+
+.team-social-list .team-social-item .team-social-link {
+  display: flex;
+  border-radius: 50%;
+  align-items: center;
+  justify-content: center;
+  width: 44px;
+  height: 44px;
+  background-color: var(--primary-white-color);
+  transition: background-color 250ms var(--transition-timing-function);
+}
+.team-social-list {
+  display: flex;
+  margin-top: 16px;
+}
+.team-social-icon {
+  fill: var(--social-icon-color);
+  /* Добавляем анимацию */
+  transition: fill 250ms var(--transition-timing-function);
+}
+.team-social-link:hover .team-social-icon,
+.team-social-link:focus .team-social-icon {
+  fill: var(--primary-white-color);
+}
+
+.team-social-item + .team-social-item {
+  margin-left: 10px;
+}
+.team-social-list .team-social-item .team-social-link:hover,
+.team-social-list .team-social-item .team-social-link:focus {
+  background-color: var(--accent-color);
+}

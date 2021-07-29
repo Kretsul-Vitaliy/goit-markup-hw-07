@@ -129,3 +129,9 @@
   /* Добавляем анимацию */
   transition: color 250ms var(--transition-timing-function);
 }
+.link-contact .header-list-icon {
+  margin-right: 10px;
+  fill: currentColor;
+  /* Добавляем анимацию */
+  transition: fill 250ms var(--transition-timing-function);
+}

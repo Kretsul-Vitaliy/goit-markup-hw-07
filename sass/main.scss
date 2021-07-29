@@ -1,3 +1,6 @@
+//Vendors
+@import './vendors/_modern-normalize.css';
+
 //Utils
 @import './utils/variable';
 @import './utils/visually-hidden';
@@ -10,8 +13,13 @@
 @import './layout/header';
 @import './layout/hero';
 @import './layout/footer';
+@import './layout/portfolio';
+@import './layout/client';
+@import './layout/modal.window';
+@import './layout/form.send.button';
 
 //Components
+
 @import './components/features';
 @import './components/services';
 @import './components/team';
