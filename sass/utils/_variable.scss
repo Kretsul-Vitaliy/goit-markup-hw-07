@@ -2,8 +2,11 @@
   --primary-text-color: rgba(0, 0, 0, 0.8);
   --title-text-color: #000000;
   --accent-color: #2196f3;
+  $accent-color: #2196f3;
   --cursor-button-color: #188ce8;
+  $cursor-button-color: #188ce8;
   --primary-white-color: #ffffff;
+  $primary-white-color: #ffffff;
   --text-color-white: #ffffff;
   --text-footer: #ffffff99;
   --border-color: #ececec;
@@ -11,11 +14,13 @@
   --portfolio-button-color: #f5f4fa;
   --text-color: #212121;
   --portfolio-color-title: #757575;
-  --hero-background-color: #2f303a;
+  // --hero-background-color: #2f303a;
+  $hero-background-color: #2f303a;
   --footer-item-color: rgba(255, 255, 255, 0.6);
   --social-icon-color: #afb1b8;
   --footer-icon-color: rgba(255, 255, 255, 0.1);
   --transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  $transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
   --modal-form-input: rgba(33, 33, 33, 0.2);
   --textarea: rgba(117, 117, 117, 0.5);
   --footer-form-icon-color: #ffffff;
