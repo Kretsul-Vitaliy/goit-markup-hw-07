@@ -152,7 +152,7 @@
   font-weight: normal;
   font-size: 16px;
   line-height: 20px;
-  background-color: var(--hero-background-color);
+  background-color: $footer-background-color;
   border: 1px solid rgba(255, 255, 255, 0.3);
   box-sizing: border-box;
   filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
@@ -164,8 +164,8 @@
 
 .footer-form-input:hover,
 .footer-form-input:focus {
-  border-color: var(--accent-color);
-  color: var(--primary-white-color);
+  border-color: $accent-color;
+  color: $primary-white-color;
 }
 .footer-form-input::placeholder {
 }

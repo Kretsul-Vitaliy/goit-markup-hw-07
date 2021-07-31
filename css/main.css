@@ -13,6 +13,7 @@
   --portfolio-button-color: #f5f4fa;
   --text-color: #212121;
   --portfolio-color-title: #757575;
+  --hero-background-color: #2f303a;
   --footer-item-color: rgba(255, 255, 255, 0.6);
   --social-icon-color: #afb1b8;
   --footer-icon-color: rgba(255, 255, 255, 0.1);
@@ -219,7 +220,7 @@ img {
 }
 
 .hero {
-  background-color: var(--hero-background-color);
+  background-color: #2f303a;
   padding-top: 200px;
   padding-bottom: 200px;
   text-align: center;
@@ -238,7 +239,7 @@ img {
   text-align: center;
   letter-spacing: 0.06em;
   text-transform: uppercase;
-  color: var(--primary-white-color);
+  color: #ffffff;
   width: 696px;
   margin: 0 auto;
   margin-bottom: 30px;
@@ -259,13 +260,13 @@ img {
   min-width: 200px;
   min-height: 50px;
   /* Добавляем анимацию */
-  transition: box-shadow 250ms var(--transition-timing-function);
+  transition: box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .hero__button:hover, .hero__button:focus {
   /* При наведении курсора делает не прозрачным кнопку */
   /* background-color: rgba(33, 150, 243, 1); */
-  background-color: var(--cursor-button-color);
+  background-color: #188ce8;
   /* opacity: 1; */
   /* Добавляем анимацию */
   animation-iteration-count: infinite;
@@ -273,12 +274,12 @@ img {
 }
 
 .hero__button.primary {
-  color: var(--primary-white-color);
-  background-color: var(--accent-color);
+  color: #ffffff;
+  background-color: #2196f3;
   /* background-color: rgba(33, 150, 243, 0.9); */
   /* opacity: 0.9; */
   /* Добавляем анимацию */
-  transition: background-color 250ms var(--transition-timing-function), color 250ms var(--transition-timing-function), opacity 250ms var(--transition-timing-function);
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1), color 250ms cubic-bezier(0.4, 0, 0.2, 1), opacity 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 /* Делает слово Studio в логотипе footer белым */
@@ -441,7 +442,7 @@ img {
   font-weight: normal;
   font-size: 16px;
   line-height: 20px;
-  background-color: var(--hero-background-color);
+  background-color: #2f303a;
   border: 1px solid rgba(255, 255, 255, 0.3);
   box-sizing: border-box;
   filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
@@ -453,8 +454,8 @@ img {
 
 .footer-form-input:hover,
 .footer-form-input:focus {
-  border-color: var(--accent-color);
-  color: var(--primary-white-color);
+  border-color: #2196f3;
+  color: #ffffff;
 }
 
 .footer-form-box-send {
