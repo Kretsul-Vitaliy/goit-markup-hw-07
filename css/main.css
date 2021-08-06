@@ -620,7 +620,7 @@ a {
 }
 
 .team {
-  background-color: var(--portfolio-button-color);
+  background-color: #f5f4fa;
   padding-top: 94px;
   padding-bottom: 94px;
   max-width: 1600px;
