@@ -12,57 +12,44 @@
     ),
     url(../images/hero/header-background.jpg);
 
-  /* Изменяет шрифт Эффективные решения для вашего бизнеса */
+  //Изменяет шрифт Эффективные решения для вашего бизнеса
   &__title {
-    font-style: normal;
     font-weight: 900;
     font-size: 44px;
     line-height: 60px;
-    text-align: center;
     letter-spacing: 0.06em;
     text-transform: uppercase;
-    color: $primary-white-color;
-    width: 696px;
-    margin: 0 auto;
+    color: $title-white-color;
     margin-bottom: 30px;
   }
-  /* Изменяет курсор на кнопке заказать услугу в секции3 */
+  //Кнопка заказать услугу в секции Hero
   &__button {
+    color: $button-white-color;
+    background-color: $accent-color;
     border: 1px solid transparent;
-    font-family: 'Roboto', sans-serif;
     cursor: pointer;
-    font-style: normal;
     font-weight: bold;
     font-size: 16px;
     line-height: 30px;
-    /* identical to box height, or 187% */
     letter-spacing: 0.06em;
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
     border-radius: 4px;
     min-width: 200px;
     min-height: 50px;
-    /* Добавляем анимацию */
+    //Добавляем анимацию
     transition: box-shadow 250ms $transition-timing-function;
 
     &:hover,
     &:focus {
-      /* При наведении курсора делает не прозрачным кнопку */
-      /* background-color: rgba(33, 150, 243, 1); */
+      //При наведении курсора делает кнопку другим цветом
       background-color: $cursor-button-color;
-      /* opacity: 1; */
-      /* Добавляем анимацию */
+      //Добавляем анимацию
       animation-iteration-count: infinite;
-      display: inline-block;
     }
-    &.primary {
-      color: $primary-white-color;
-      background-color: $accent-color;
-      /* background-color: rgba(33, 150, 243, 0.9); */
-      /* opacity: 0.9; */
-      /* Добавляем анимацию */
-      transition: background-color 250ms $transition-timing-function,
-        color 250ms $transition-timing-function,
-        opacity 250ms $transition-timing-function;
-    }
+
+    //Добавляем анимацию
+    transition: background-color 250ms $transition-timing-function,
+      color 250ms $transition-timing-function,
+      opacity 250ms $transition-timing-function;
   }
 }

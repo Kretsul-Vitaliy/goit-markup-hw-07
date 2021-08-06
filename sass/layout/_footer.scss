@@ -1,179 +1,42 @@
-/* Делает слово Studio в логотипе footer белым */
-.logo-span-footer {
-  color: var(--primary-white-color);
-}
-/* Делает подсветку при наведении курсора или перехода цветом для nav и footer */
-.footer-list .footer-item:hover,
-.footer-list .footer-item:focus,
-.footer-list .footer-map:hover,
-.footer-list .footer-map:focus {
-  color: var(--accent-color);
-}
-/* Делает футер в стиле */
-.footer-list .footer-item {
-  font-style: normal;
-  font-weight: normal;
-  font-size: 14px;
-  line-height: 24px;
-  text-decoration: none;
-  letter-spacing: 0.03em;
-  color: var(--footer-item-color);
-  /* margin-right: 10px; */
-  /* Добавляем анимацию */
-  transition: color 250ms var(--transition-timing-function);
-}
-/* Делает цвет текста ссылки на карту */
-.footer-map {
-  color: var(--primary-white-color);
-  font-style: normal;
-  font-weight: normal;
-  font-size: 14px;
-  line-height: 24px;
-  text-decoration: none;
-  /* Добавляем анимацию */
-  transition: color 250ms var(--transition-timing-function);
-  white-space: nowrap; /* Запрещаем перенос текста */
-}
-/* Делаем цвет фона footer */
-.footer-background {
-  background-color: var(--hero-background-color);
+//Footer
+.footer {
+  background-color: $footer-background-color;
   padding-top: 60px;
   padding-bottom: 60px;
   max-width: 1600px;
   margin: 0px auto;
-}
-.footer-background .logo {
-  display: block;
-  margin-bottom: 20px;
-}
+  a:hover,
+  a:focus {
+    color: $accent-color;
+  }
+  &__box {
+    display: flex;
+    align-items: baseline;
+  }
+  &__adress {
+    margin-right: 70px;
+  }
+  &__logo {
+    display: block;
+    margin-bottom: 20px;
+  }
 
-.footer-item + .footer-item {
-  margin-top: 9px;
-}
-
-.footer-social-name {
-  font-weight: 700;
-  font-size: 14px;
-  line-height: 16px;
-  letter-spacing: 0.03em;
-  text-transform: uppercase;
-  color: var(--primary-white-color);
-}
-.footer-social-list {
-  display: flex;
-  margin-top: 20px;
-}
-.footer-social {
-}
-.footer-social-link {
-  display: flex;
-  border-radius: 50%;
-  align-items: center;
-  justify-content: center;
-  width: 44px;
-  height: 44px;
-  background-color: var(--footer-icon-color);
-  fill: var(--primary-white-color);
-  /* Добавляем анимацию */
-  transition: background-color 250ms var(--transition-timing-function),
-    fill 250ms var(--transition-timing-function);
-}
-.footer-social-item + .footer-social-item {
-  margin-left: 10px;
-}
-.footer-social-link:hover,
-.footer-social-link:focus {
-  background-color: var(--accent-color);
-}
-
-.footer-section {
-  display: flex;
-  align-items: baseline;
-}
-.logo-adress {
-  margin-right: 70px;
-}
-
-/* Форма подпишить на рассылку */
-.footer-form-box {
-  margin-left: 93px;
-  /* width: 570px; */
-  width: 100%;
-}
-
-.footer-form-title {
-  font-style: normal;
-  font-weight: bold;
-  font-size: 14px;
-  line-height: 16px;
-  letter-spacing: 0.03em;
-  text-transform: uppercase;
-  color: var(--primary-white-color);
-}
-
-.footer-form-icon {
-  fill: var(--footer-form-icon-color);
-  margin-left: 10px;
-}
-
-.footer-form-send-button {
-  padding: 10px 29px;
-  margin-left: 12px;
-  cursor: pointer;
-  font-style: normal;
-  font-weight: bold;
-  font-size: 16px;
-  line-height: 30px;
-  /* identical to box height, or 187% */
-  display: flex;
-  align-items: center;
-  letter-spacing: 0.06em;
-  color: var(--primary-white-color);
-  background-color: var(--accent-color);
-  border-radius: 4px;
-  border: 1px solid transparent;
-  transition: background-color 250ms var(--transition-timing-function);
-}
-.footer-form-send-button:hover,
-.footer-form-send-button:focus {
-  background-color: var(--cursor-button-color);
-}
-
-.footer-send-button {
-}
-
-.footer-form-input {
-  width: 100%;
-  height: 50px;
-  border-radius: 4px;
-  padding-left: 16px;
-  outline: none;
-  font-style: normal;
-  font-weight: normal;
-  font-size: 16px;
-  line-height: 20px;
-  background-color: $footer-background-color;
-  border: 1px solid rgba(255, 255, 255, 0.3);
-  box-sizing: border-box;
-  filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
-  align-items: center;
-  letter-spacing: 0.03em;
-  display: flex;
-  color: rgba(255, 255, 255, 0.6);
-}
-
-.footer-form-input:hover,
-.footer-form-input:focus {
-  border-color: $accent-color;
-  color: $primary-white-color;
-}
-.footer-form-input::placeholder {
-}
-
-.footer-form-box-send {
-  display: flex;
-  align-items: center;
-}
-.footer-form-send {
-  margin-top: 20px;
+  &__link {
+    font-style: normal;
+    font-weight: normal;
+    letter-spacing: 0.03em;
+    color: $footer-item-color;
+    //Добавляем анимацию
+    transition: color 250ms $transition-timing-function;
+  }
+  &__map {
+    color: $text-white-color;
+    font-style: normal;
+    //Добавляем анимацию
+    transition: color 250ms $transition-timing-function;
+    // white-space: nowrap; // Запрещаем перенос текста
+  }
+  &__item + &__item {
+    margin-top: 9px;
+  }
 }
