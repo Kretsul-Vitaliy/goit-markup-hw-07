@@ -44,9 +44,6 @@
   cursor: pointer;
   padding: 0px;
 }
-.icon-modal-close-btn {
-}
-
 // Прячем модальное окно
 .is-hidden {
   opacity: 0;
@@ -132,6 +129,7 @@
     display: flex;
     align-items: center;
     justify-content: center;
+    margin-bottom: 30px;
   }
 
   &__modal-checkbox {
